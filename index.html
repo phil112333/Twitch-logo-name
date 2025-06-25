@@ -523,16 +523,16 @@
   </div>
 
   <script>
-    // Font list - NEW FONTS
+    // Font list - FIXED FONT NAMES
     const fonts = [
-      'Arista Pro Trial Light',
+      'AristaProTrial-Light',
       'Avaneonz',
-      'Avant Garde',
+      'AvantGarde',
       'Bahnschrift',
-      'Beon Regular',
-      'Classic Typewriter Regular',
-      'Dolce Vita',
-      'Trebuchet MS Bold'
+      'Beon-Regular',
+      'ClassicTypewriterRegular',
+      'DolceVita',
+      'TrebuchetMS-Bold'
     ];
     
     const fontListContainer = document.getElementById("fontList");
@@ -595,16 +595,16 @@
         textDiv.textContent = text;
         
         // Force set styles - original code style
-        textDiv.style.setProperty('color', 'white', 'important');
-        textDiv.style.setProperty('font-weight', '500', 'important');
+        textDiv.style.color = 'white';
+        textDiv.style.fontWeight = '500';
         
         // Adjust white glow intensity based on color - original code logic
         const whiteGlow = currentTextColor === '#FFFFFF' ? 
           '0 0 0.1px white, 0 0 0.4px white' :
           '0 0 0.5px white, 0 0 1.5px white';
           
-        textDiv.style.setProperty('text-shadow', `${whiteGlow}, 0 0 10px ${currentTextColor}, 0 0 20px ${currentTextColor}, 0 0 35px ${currentTextColor}, 0 0 45px ${currentTextColor}`, 'important');
-        textDiv.style.setProperty('font-family', `'${font}', sans-serif`, 'important');
+        textDiv.style.textShadow = `${whiteGlow}, 0 0 10px ${currentTextColor}, 0 0 20px ${currentTextColor}, 0 0 35px ${currentTextColor}, 0 0 45px ${currentTextColor}`;
+        textDiv.style.fontFamily = `'${font}', sans-serif`;
         
         fontDiv.appendChild(textDiv);
         fontListContainer.appendChild(fontDiv);

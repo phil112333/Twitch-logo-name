@@ -6,11 +6,11 @@
   <title>Twitch Neon Text Effect Showcase</title>
   
   <!-- Font preloading -->
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Amanda-Artdesign.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Assalwa.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/BadScript-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/BarcelonyRegular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Bayshore.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/Twitch-logo-fonts/AristaProTrial-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/Twitch-logo-fonts/Avaneonz.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/Twitch-logo-fonts/AvantGarde.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/Twitch-logo-fonts/Bahnschrift.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/Twitch-logo-fonts/Beon-Regular.woff2" as="font" type="font/woff2" crossorigin>
   
   <style>
     /* Font definitions */
@@ -367,7 +367,7 @@
     
     .neon-showcase-wrapper .twitch-logo {
       flex-shrink: 0 !important;
-      color: #9146FF !important;
+      color: white !important;
       filter: drop-shadow(0 0 5px currentColor) drop-shadow(0 0 10px currentColor) drop-shadow(0 0 15px currentColor) !important;
       display: flex !important;
       align-items: center !important;
@@ -456,59 +456,61 @@
             <textarea id="textInput" placeholder="Type your text here..." rows="1">YOUR NAME</textarea>
           </div>
           
-          <div class="color-group">
-            <label>Twitch logo Color:</label>
-            <div class="color-numbers">
-              <div class="color-number">#1</div>
-              <div class="color-number">#2</div>
-              <div class="color-number">#3</div>
-              <div class="color-number">#4</div>
-              <div class="color-number">#5</div>
-              <div class="color-number">#6</div>
-              <div class="color-number">#7</div>
-              <div class="color-number">#8</div>
-              <div class="color-number">#9</div>
-              <div class="color-number">#10</div>
+          <div style="display: flex; gap: 25px; flex-wrap: wrap; justify-content: center;">
+            <div class="color-group">
+              <label>Twitch logo Color:</label>
+              <div class="color-numbers">
+                <div class="color-number">#1</div>
+                <div class="color-number">#2</div>
+                <div class="color-number">#3</div>
+                <div class="color-number">#4</div>
+                <div class="color-number">#5</div>
+                <div class="color-number">#6</div>
+                <div class="color-number">#7</div>
+                <div class="color-number">#8</div>
+                <div class="color-number">#9</div>
+                <div class="color-number">#10</div>
+              </div>
+              <div class="color-boxes" id="logoColorBoxes">
+                <div class="color-box" style="background-color: #FFFFFF;" data-color="#FFFFFF"></div>
+                <div class="color-box" style="background-color: #FBFDC8;" data-color="#FBFDC8"></div>
+                <div class="color-box" style="background-color: #FD0192;" data-color="#FD0192"></div>
+                <div class="color-box" style="background-color: #F4051C;" data-color="#F4051C"></div>
+                <div class="color-box" style="background-color: #FAEB08;" data-color="#FAEB08"></div>
+                <div class="color-box" style="background-color: #F78A07;" data-color="#F78A07"></div>
+                <div class="color-box" style="background-color: #0002F3;" data-color="#0002F3"></div>
+                <div class="color-box" style="background-color: #0698E1;" data-color="#0698E1"></div>
+                <div class="color-box" style="background-color: #08E94F;" data-color="#08E94F"></div>
+                <div class="color-box active" style="background-color: #9146FF;" data-color="#9146FF"></div>
+              </div>
             </div>
-            <div class="color-boxes" id="logoColorBoxes">
-              <div class="color-box" style="background-color: #FFFFFF;" data-color="#FFFFFF"></div>
-              <div class="color-box" style="background-color: #FBFDC8;" data-color="#FBFDC8"></div>
-              <div class="color-box" style="background-color: #FD0192;" data-color="#FD0192"></div>
-              <div class="color-box" style="background-color: #F4051C;" data-color="#F4051C"></div>
-              <div class="color-box" style="background-color: #FAEB08;" data-color="#FAEB08"></div>
-              <div class="color-box" style="background-color: #F78A07;" data-color="#F78A07"></div>
-              <div class="color-box" style="background-color: #0002F3;" data-color="#0002F3"></div>
-              <div class="color-box" style="background-color: #0698E1;" data-color="#0698E1"></div>
-              <div class="color-box" style="background-color: #08E94F;" data-color="#08E94F"></div>
-              <div class="color-box active" style="background-color: #9146FF;" data-color="#9146FF"></div>
-            </div>
-          </div>
-          
-          <div class="color-group">
-            <label>Select Text Color:</label>
-            <div class="color-numbers">
-              <div class="color-number">#1</div>
-              <div class="color-number">#2</div>
-              <div class="color-number">#3</div>
-              <div class="color-number">#4</div>
-              <div class="color-number">#5</div>
-              <div class="color-number">#6</div>
-              <div class="color-number">#7</div>
-              <div class="color-number">#8</div>
-              <div class="color-number">#9</div>
-              <div class="color-number">#10</div>
-            </div>
-            <div class="color-boxes" id="textColorBoxes">
-              <div class="color-box active" style="background-color: #FFFFFF;" data-color="#FFFFFF"></div>
-              <div class="color-box" style="background-color: #FBFDC8;" data-color="#FBFDC8"></div>
-              <div class="color-box" style="background-color: #FD0192;" data-color="#FD0192"></div>
-              <div class="color-box" style="background-color: #F4051C;" data-color="#F4051C"></div>
-              <div class="color-box" style="background-color: #FAEB08;" data-color="#FAEB08"></div>
-              <div class="color-box" style="background-color: #F78A07;" data-color="#F78A07"></div>
-              <div class="color-box" style="background-color: #0002F3;" data-color="#0002F3"></div>
-              <div class="color-box" style="background-color: #0698E1;" data-color="#0698E1"></div>
-              <div class="color-box" style="background-color: #08E94F;" data-color="#08E94F"></div>
-              <div class="color-box" style="background-color: #A301E0;" data-color="#A301E0"></div>
+            
+            <div class="color-group">
+              <label>Select Text Color:</label>
+              <div class="color-numbers">
+                <div class="color-number">#1</div>
+                <div class="color-number">#2</div>
+                <div class="color-number">#3</div>
+                <div class="color-number">#4</div>
+                <div class="color-number">#5</div>
+                <div class="color-number">#6</div>
+                <div class="color-number">#7</div>
+                <div class="color-number">#8</div>
+                <div class="color-number">#9</div>
+                <div class="color-number">#10</div>
+              </div>
+              <div class="color-boxes" id="textColorBoxes">
+                <div class="color-box active" style="background-color: #FFFFFF;" data-color="#FFFFFF"></div>
+                <div class="color-box" style="background-color: #FBFDC8;" data-color="#FBFDC8"></div>
+                <div class="color-box" style="background-color: #FD0192;" data-color="#FD0192"></div>
+                <div class="color-box" style="background-color: #F4051C;" data-color="#F4051C"></div>
+                <div class="color-box" style="background-color: #FAEB08;" data-color="#FAEB08"></div>
+                <div class="color-box" style="background-color: #F78A07;" data-color="#F78A07"></div>
+                <div class="color-box" style="background-color: #0002F3;" data-color="#0002F3"></div>
+                <div class="color-box" style="background-color: #0698E1;" data-color="#0698E1"></div>
+                <div class="color-box" style="background-color: #08E94F;" data-color="#08E94F"></div>
+                <div class="color-box" style="background-color: #A301E0;" data-color="#A301E0"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -521,28 +523,16 @@
   </div>
 
   <script>
-    // Font list
+    // Font list - NEW FONTS
     const fonts = [
-      'Bad Script',
-      'Amanda',
-      'Assalwa',
-      'Cochocib Script Latin Pro',
-      'Bayshore',
-      'Barcelony',
-      'Brat',
-      'Gruenewald VA',
-      'Courgette',
-      'Hamillton',
-      'Lovely Valentine',
-      'Magnificent Supernatural',
-      'Schadow BT',
-      'Shadows Into',
-      'Quinzey',
-      'Signature',
-      'Rock Salt',
-      'Vintage Moon',
-      'Wild Spirit',
-      'Impact'
+      'Arista Pro Trial Light',
+      'Avaneonz',
+      'Avant Garde',
+      'Bahnschrift',
+      'Beon Regular',
+      'Classic Typewriter Regular',
+      'Dolce Vita',
+      'Trebuchet MS Bold'
     ];
     
     const fontListContainer = document.getElementById("fontList");
@@ -595,7 +585,8 @@
         
         const logoDiv = document.createElement("div");
         logoDiv.classList.add("twitch-logo");
-        logoDiv.style.setProperty('color', currentLogoColor, 'important');
+        logoDiv.style.color = 'white';
+        logoDiv.style.filter = `drop-shadow(0 0 5px ${currentLogoColor}) drop-shadow(0 0 10px ${currentLogoColor}) drop-shadow(0 0 15px ${currentLogoColor})`;
         logoDiv.innerHTML = /Mobi|Android/i.test(navigator.userAgent) ? createMobileTwitchLogo() : createTwitchLogo();
         fontDiv.appendChild(logoDiv);
         

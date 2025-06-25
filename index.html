@@ -5,145 +5,61 @@
   <meta name="viewport" content="width=1200, user-scalable=yes">
   <title>Twitch Neon Text Effect Showcase</title>
   
-  <!-- Font preloading -->
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/Twitch-logo-fonts/AristaProTrial-Light.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/Twitch-logo-fonts/Avaneonz.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/Twitch-logo-fonts/AvantGarde.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/Twitch-logo-fonts/Bahnschrift.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/phil112333/Twitch-logo-fonts/Beon-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  
   <style>
-    /* Font definitions */
+    /* Font definitions - FIXED FONT NAMES */
     @font-face {
-      font-family: 'Bad Script';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/BadScript-Regular.woff2') format('woff2');
+      font-family: 'AristaProTrial-Light';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/Twitch-logo-fonts/AristaProTrial-Light.woff2') format('woff2');
       font-weight: normal;
       font-style: normal;
       font-display: swap;
     }
     @font-face {
-      font-family: 'Amanda';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Amanda-Artdesign.woff2') format('woff2');
+      font-family: 'Avaneonz';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/Twitch-logo-fonts/Avaneonz.woff2') format('woff2');
       font-weight: normal;
       font-style: normal;
       font-display: swap;
     }
     @font-face {
-      font-family: 'Assalwa';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Assalwa.woff2') format('woff2');
+      font-family: 'AvantGarde';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/Twitch-logo-fonts/AvantGarde.woff2') format('woff2');
       font-weight: normal;
       font-style: normal;
       font-display: swap;
     }
     @font-face {
-      font-family: 'Cochocib Script Latin Pro';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/CochocibScriptLatinPro.woff2') format('woff2');
+      font-family: 'Bahnschrift';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/Twitch-logo-fonts/Bahnschrift.woff2') format('woff2');
       font-weight: normal;
       font-style: normal;
       font-display: swap;
     }
     @font-face {
-      font-family: 'Bayshore';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Bayshore.woff2') format('woff2');
+      font-family: 'Beon-Regular';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/Twitch-logo-fonts/Beon-Regular.woff2') format('woff2');
       font-weight: normal;
       font-style: normal;
       font-display: swap;
     }
     @font-face {
-      font-family: 'Barcelony';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/BarcelonyRegular.woff2') format('woff2');
+      font-family: 'ClassicTypewriterRegular';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/Twitch-logo-fonts/ClassicTypewriterRegularSWFTE.woff2') format('woff2');
       font-weight: normal;
       font-style: normal;
       font-display: swap;
     }
     @font-face {
-      font-family: 'Brat';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Brat.woff2') format('woff2');
+      font-family: 'DolceVita';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/Twitch-logo-fonts/DolceVita_DISK.woff2') format('woff2');
       font-weight: normal;
       font-style: normal;
       font-display: swap;
     }
     @font-face {
-      font-family: 'Gruenewald VA';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/GruenewaldVA.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Courgette';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Courgette-Regular.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Hamillton';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Hamillton-Regular.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Lovely Valentine';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/LovelyValentine.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Magnificent Supernatural';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/MagnificentSupernatural.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Schadow BT';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/SchadowBT-Roman.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Shadows Into';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/ShadowsIntoLight.woff2') format('woff2');
-      font-weight: 300;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Quinzey';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Quinzey.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Signature';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Signature.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Rock Salt';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/RockSalt.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Vintage Moon';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/Vintage_Moon.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Wild Spirit';
-      src: url('https://cdn.jsdelivr.net/gh/phil112333/neon-fonts/WildSpirit.woff2') format('woff2');
-      font-weight: normal;
+      font-family: 'TrebuchetMS-Bold';
+      src: url('https://cdn.jsdelivr.net/gh/phil112333/Twitch-logo-fonts/TrebuchetMS-Bold.woff2') format('woff2');
+      font-weight: bold;
       font-style: normal;
       font-display: swap;
     }
@@ -395,15 +311,11 @@
         0 0 45px currentColor !important;
     }
 
-    /* Specific fonts with larger size - #3, #4, #5, #8, #11, #12, #16, #19 */
+    /* Specific fonts with larger size - #3, #4, #5, #8 */
     .neon-showcase-wrapper .font-name.font-3,
     .neon-showcase-wrapper .font-name.font-4,
     .neon-showcase-wrapper .font-name.font-5,
-    .neon-showcase-wrapper .font-name.font-8,
-    .neon-showcase-wrapper .font-name.font-11,
-    .neon-showcase-wrapper .font-name.font-12,
-    .neon-showcase-wrapper .font-name.font-16,
-    .neon-showcase-wrapper .font-name.font-19 {
+    .neon-showcase-wrapper .font-name.font-8 {
       font-size: 3.2rem !important;
     }
 
@@ -421,11 +333,7 @@
       .neon-showcase-wrapper .font-name.font-3,
       .neon-showcase-wrapper .font-name.font-4,
       .neon-showcase-wrapper .font-name.font-5,
-      .neon-showcase-wrapper .font-name.font-8,
-      .neon-showcase-wrapper .font-name.font-11,
-      .neon-showcase-wrapper .font-name.font-12,
-      .neon-showcase-wrapper .font-name.font-16,
-      .neon-showcase-wrapper .font-name.font-19 {
+      .neon-showcase-wrapper .font-name.font-8 {
         font-size: 2.4rem !important;
       }
       
@@ -446,7 +354,7 @@
     <div class="neon-container">
       <header>
         <h1>Twitch Neon Text Effect Showcase</h1>
-        <p class="subtitle">Enter any text and choose neon colors for both Twitch logo and text to see them in 20 different fonts</p>
+        <p class="subtitle">Enter any text and choose neon colors for both Twitch logo and text to see them in 8 different fonts</p>
       </header>
       
       <div class="controls">
@@ -523,10 +431,14 @@
   </div>
 
   <script>
-    // Font list - FIXED FONT NAMES
+    // Global variables
+    let currentLogoColor = "#9146FF";
+    let currentTextColor = "#FFFFFF";
+    
+    // Font list - FIXED FONT NAMES FOR #4 AND #8
     const fonts = [
       'AristaProTrial-Light',
-      'Avaneonz',
+      'Avaneonz', 
       'AvantGarde',
       'Bahnschrift',
       'Beon-Regular',
@@ -535,22 +447,14 @@
       'TrebuchetMS-Bold'
     ];
     
-    const fontListContainer = document.getElementById("fontList");
-    const textInput = document.getElementById("textInput");
-    const logoColorBoxes = document.querySelectorAll("#logoColorBoxes .color-box");
-    const textColorBoxes = document.querySelectorAll("#textColorBoxes .color-box");
-    
-    let currentLogoColor = "#9146FF";
-    let currentTextColor = "#FFFFFF";
-    
-    // Create Twitch logo SVG (your exact SVG code) - adjusted height to match text
+    // Create Twitch logo SVG
     function createTwitchLogo() {
       return `
         <svg width="100" height="60" viewBox="0 0 430 505" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <polyline stroke="currentColor" stroke-width="11.6648" stroke-linecap="round" stroke-linejoin="round" fill="none" points="6,218 6,366 114,366 112,500 218,364 353,364 424,280 424,215"/>
-          <polyline stroke="currentColor" stroke-width="11.6648" stroke-linecap="round" stroke-linejoin="round" fill="none" points="424,180 424,6 94,6 7,89 7,179"/>
-          <line stroke="currentColor" stroke-width="11.6648" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="180" y1="132" x2="180" y2="286"/>
-          <line stroke="currentColor" stroke-width="11.6648" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="316" y1="286" x2="316" y2="134"/>
+          <polyline stroke="currentColor" stroke-width="35" stroke-linecap="round" stroke-linejoin="round" fill="none" points="6,218 6,366 114,366 112,500 218,364 353,364 424,280 424,215"/>
+          <polyline stroke="currentColor" stroke-width="35" stroke-linecap="round" stroke-linejoin="round" fill="none" points="424,180 424,6 94,6 7,89 7,179"/>
+          <line stroke="currentColor" stroke-width="35" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="180" y1="132" x2="180" y2="286"/>
+          <line stroke="currentColor" stroke-width="35" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="316" y1="286" x2="316" y2="134"/>
         </svg>
       `;
     }
@@ -559,18 +463,58 @@
     function createMobileTwitchLogo() {
       return `
         <svg width="75" height="45" viewBox="0 0 430 505" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <polyline stroke="currentColor" stroke-width="11.6648" stroke-linecap="round" stroke-linejoin="round" fill="none" points="6,218 6,366 114,366 112,500 218,364 353,364 424,280 424,215"/>
-          <polyline stroke="currentColor" stroke-width="11.6648" stroke-linecap="round" stroke-linejoin="round" fill="none" points="424,180 424,6 94,6 7,89 7,179"/>
-          <line stroke="currentColor" stroke-width="11.6648" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="180" y1="132" x2="180" y2="286"/>
-          <line stroke="currentColor" stroke-width="11.6648" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="316" y1="286" x2="316" y2="134"/>
+          <polyline stroke="currentColor" stroke-width="35" stroke-linecap="round" stroke-linejoin="round" fill="none" points="6,218 6,366 114,366 112,500 218,364 353,364 424,280 424,215"/>
+          <polyline stroke="currentColor" stroke-width="35" stroke-linecap="round" stroke-linejoin="round" fill="none" points="424,180 424,6 94,6 7,89 7,179"/>
+          <line stroke="currentColor" stroke-width="35" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="180" y1="132" x2="180" y2="286"/>
+          <line stroke="currentColor" stroke-width="35" stroke-linecap="round" stroke-linejoin="round" fill="none" x1="316" y1="286" x2="316" y2="134"/>
         </svg>
       `;
     }
     
-    // Render fonts
+    // Update logo effect function - IMMEDIATE UPDATE
+    function updateLogoEffect() {
+      console.log('Updating logo effect with color:', currentLogoColor);
+      const logoElements = document.querySelectorAll('.twitch-logo');
+      console.log('Found logo elements:', logoElements.length);
+      
+      // Force immediate style update
+      for (let i = 0; i < logoElements.length; i++) {
+        const el = logoElements[i];
+        el.style.setProperty('color', 'white', 'important');
+        el.style.setProperty('filter', `drop-shadow(0 0 5px ${currentLogoColor}) drop-shadow(0 0 10px ${currentLogoColor}) drop-shadow(0 0 15px ${currentLogoColor})`, 'important');
+      }
+      
+      console.log('Logo effect updated immediately');
+    }
+    
+    // Update text neon effect function - IMMEDIATE UPDATE
+    function updateTextNeonEffect() {
+      console.log('Updating text neon effect with color:', currentTextColor);
+      const textElements = document.querySelectorAll('.font-name');
+      console.log('Found text elements:', textElements.length);
+      
+      // Force immediate style update
+      for (let i = 0; i < textElements.length; i++) {
+        const el = textElements[i];
+        el.style.setProperty('color', 'white', 'important');
+        
+        const whiteGlow = currentTextColor === '#FFFFFF' ? 
+          '0 0 0.1px white, 0 0 0.4px white' :
+          '0 0 0.5px white, 0 0 1.5px white';
+          
+        el.style.setProperty('text-shadow', `${whiteGlow}, 0 0 10px ${currentTextColor}, 0 0 20px ${currentTextColor}, 0 0 35px ${currentTextColor}, 0 0 45px ${currentTextColor}`, 'important');
+      }
+      
+      console.log('Text neon effect updated immediately');
+    }
+    
+    // Render fonts function
     function renderFonts() {
+      const textInput = document.getElementById("textInput");
+      const fontListContainer = document.getElementById("fontList");
       const text = textInput.value || "YOUR NAME";
-      console.log('Rendering fonts with text:', text, 'logo color:', currentLogoColor, 'text color:', currentTextColor);
+      
+      console.log('Rendering fonts with text:', text);
       
       fontListContainer.innerHTML = '';
       
@@ -578,33 +522,49 @@
         const fontDiv = document.createElement("div");
         fontDiv.classList.add("font-item");
         
+        // Font number
         const numberDiv = document.createElement("div");
         numberDiv.classList.add("font-number");
         numberDiv.textContent = `#${index + 1}`;
         fontDiv.appendChild(numberDiv);
         
+        // Twitch logo with immediate effect
         const logoDiv = document.createElement("div");
         logoDiv.classList.add("twitch-logo");
-        logoDiv.style.color = 'white';
-        logoDiv.style.filter = `drop-shadow(0 0 5px ${currentLogoColor}) drop-shadow(0 0 10px ${currentLogoColor}) drop-shadow(0 0 15px ${currentLogoColor})`;
+        logoDiv.style.setProperty('color', 'white', 'important');
+        logoDiv.style.setProperty('filter', `drop-shadow(0 0 5px ${currentLogoColor}) drop-shadow(0 0 10px ${currentLogoColor}) drop-shadow(0 0 15px ${currentLogoColor})`, 'important');
         logoDiv.innerHTML = /Mobi|Android/i.test(navigator.userAgent) ? createMobileTwitchLogo() : createTwitchLogo();
         fontDiv.appendChild(logoDiv);
         
+        // Text
         const textDiv = document.createElement("div");
-        textDiv.classList.add("font-name", "neon-effect", `font-${index + 1}`);
+        textDiv.classList.add("font-name", `font-${index + 1}`);
         textDiv.textContent = text;
         
-        // Force set styles - original code style
-        textDiv.style.color = 'white';
-        textDiv.style.fontWeight = '500';
+        // Apply styles with !important for immediate effect
+        textDiv.style.setProperty('color', 'white', 'important');
+        textDiv.style.setProperty('font-family', `'${font}', Arial, sans-serif`, 'important');
+        textDiv.style.setProperty('font-weight', '500', 'important');
+        textDiv.style.setProperty('letter-spacing', '0.5px', 'important');
+        textDiv.style.setProperty('font-size', '2.5rem', 'important');
+        textDiv.style.setProperty('word-wrap', 'break-word', 'important');
+        textDiv.style.setProperty('overflow-wrap', 'break-word', 'important');
+        textDiv.style.setProperty('hyphens', 'auto', 'important');
+        textDiv.style.setProperty('line-height', '1.4', 'important');
+        textDiv.style.setProperty('word-break', 'break-word', 'important');
+        textDiv.style.setProperty('flex-grow', '1', 'important');
         
-        // Adjust white glow intensity based on color - original code logic
+        // Apply neon effect with !important
         const whiteGlow = currentTextColor === '#FFFFFF' ? 
           '0 0 0.1px white, 0 0 0.4px white' :
           '0 0 0.5px white, 0 0 1.5px white';
           
-        textDiv.style.textShadow = `${whiteGlow}, 0 0 10px ${currentTextColor}, 0 0 20px ${currentTextColor}, 0 0 35px ${currentTextColor}, 0 0 45px ${currentTextColor}`;
-        textDiv.style.fontFamily = `'${font}', sans-serif`;
+        textDiv.style.setProperty('text-shadow', `${whiteGlow}, 0 0 10px ${currentTextColor}, 0 0 20px ${currentTextColor}, 0 0 35px ${currentTextColor}, 0 0 45px ${currentTextColor}`, 'important');
+        
+        // Larger fonts for specific indices (3, 4, 5, 8)
+        if ([2, 3, 4, 7].includes(index)) {
+          textDiv.style.setProperty('font-size', '3.2rem', 'important');
+        }
         
         fontDiv.appendChild(textDiv);
         fontListContainer.appendChild(fontDiv);
@@ -613,140 +573,61 @@
       console.log('Fonts rendered successfully');
     }
     
-    // Update logo effect
-    function updateLogoEffect() {
-      console.log('Updating logo effect with color:', currentLogoColor);
-      const logoElements = document.querySelectorAll('.twitch-logo');
-      logoElements.forEach(el => {
-        el.style.setProperty('font-weight', '500', 'important');
-        
-        // Adjust white glow intensity based on color - original code logic
-        const whiteGlow = currentTextColor === '#FFFFFF' ? 
-          '0 0 0.1px white, 0 0 0.4px white' :
-          '0 0 0.5px white, 0 0 1.5px white';
-          
-        el.style.setProperty('text-shadow', `${whiteGlow}, 0 0 10px ${currentTextColor}, 0 0 20px ${currentTextColor}, 0 0 35px ${currentTextColor}, 0 0 45px ${currentTextColor}`, 'important');
-      });
-      console.log('Text neon effect updated for', textElements.length, 'elements');
-    }
-    
-    // Text input event - add debounce optimization to reduce lag
-    let inputTimeout;
-    textInput.addEventListener("input", function() {
-      console.log('Text input changed');
-      clearTimeout(inputTimeout);
-      inputTimeout = setTimeout(() => {
-        renderFonts();
-      }, 300);
-    });
-    
-    // Logo color selection event - IMMEDIATE UPDATE
-    logoColorBoxes.forEach(colorBox => {
-      colorBox.addEventListener("click", (e) => {
-        console.log('Logo color box clicked:', e.target);
-        logoColorBoxes.forEach(box => box.classList.remove("active"));
-        colorBox.classList.add("active");
-        currentLogoColor = colorBox.getAttribute("data-color");
-        console.log('Logo color changed to:', currentLogoColor);
-        
-        updateLogoEffect(); // IMMEDIATE - no delay
-      });
-    });
-    
-    // Text color selection event - IMMEDIATE UPDATE
-    textColorBoxes.forEach(colorBox => {
-      colorBox.addEventListener("click", (e) => {
-        console.log('Text color box clicked:', e.target);
-        textColorBoxes.forEach(box => box.classList.remove("active"));
-        colorBox.classList.add("active");
-        currentTextColor = colorBox.getAttribute("data-color");
-        console.log('Text color changed to:', currentTextColor);
-        
-        updateTextNeonEffect(); // IMMEDIATE - no delay
-      });
-    });
-    
-    // Force render function - solve mobile delay display issue
-    function forceRender() {
-      const container = document.getElementById("fontList");
-      if (container) {
-        container.style.display = 'none';
-        container.offsetHeight; // Force reflow
-        container.style.display = 'grid';
-        renderFonts();
-      }
-    }
-    
-    // Initialize after fonts loaded
-    function initializeAfterFontsLoad() {
-      console.log('Initializing fonts...');
-      renderFonts();
-      // Additional force render for mobile
-      if (/Mobi|Android/i.test(navigator.userAgent)) {
-        setTimeout(forceRender, 200);
-        setTimeout(forceRender, 800);
-      }
-    }
-    
-    // Multiple initialization for compatibility
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', initializeAfterFontsLoad);
-    } else {
-      initializeAfterFontsLoad();
-    }
-    
-    // Additional delayed initialization to ensure mobile font display
-    setTimeout(initializeAfterFontsLoad, 100);
-    setTimeout(initializeAfterFontsLoad, 500);
-    setTimeout(initializeAfterFontsLoad, 1000);
-    
-    // Initialize again after window loaded
-    window.addEventListener('load', () => {
-      setTimeout(initializeAfterFontsLoad, 100);
-    });
-    
-    // Re-initialize when page visibility changes (solve mobile issues)
-    document.addEventListener('visibilitychange', () => {
-      if (!document.hidden) {
-        setTimeout(initializeAfterFontsLoad, 100);
-      }
-    });
-    
-    // Re-initialize when page focus changes
-    window.addEventListener('focus', () => {
-      setTimeout(initializeAfterFontsLoad, 100);
-    });
-    
-    // Mobile touch event listener - solve touch to display issue
-    if (/Mobi|Android/i.test(navigator.userAgent)) {
-      document.addEventListener('touchstart', () => {
-        setTimeout(forceRender, 50);
-      }, { once: true });
+    // Initialize when DOM is ready
+    function initialize() {
+      console.log('Initializing...');
       
-      // Force render when page scrolls
-      window.addEventListener('scroll', () => {
-        setTimeout(forceRender, 100);
-      }, { once: true });
+      const textInput = document.getElementById("textInput");
+      const logoColorBoxes = document.querySelectorAll("#logoColorBoxes .color-box");
+      const textColorBoxes = document.querySelectorAll("#textColorBoxes .color-box");
       
-      // Re-render when device orientation changes
-      window.addEventListener('orientationchange', () => {
-        setTimeout(() => {
-          forceRender();
+      // Text input event
+      let inputTimeout;
+      textInput.addEventListener("input", function() {
+        console.log('Text input changed');
+        clearTimeout(inputTimeout);
+        inputTimeout = setTimeout(() => {
+          renderFonts();
         }, 300);
       });
-    }
-  </script>
-</body>
-</html>.setProperty('color', currentLogoColor, 'important');
-        el.style.setProperty('filter', `drop-shadow(0 0 5px ${currentLogoColor}) drop-shadow(0 0 10px ${currentLogoColor}) drop-shadow(0 0 15px ${currentLogoColor})`, 'important');
+      
+      // Logo color selection event
+      logoColorBoxes.forEach(colorBox => {
+        colorBox.addEventListener("click", (e) => {
+          console.log('Logo color box clicked');
+          logoColorBoxes.forEach(box => box.classList.remove("active"));
+          colorBox.classList.add("active");
+          currentLogoColor = colorBox.getAttribute("data-color");
+          console.log('Logo color changed to:', currentLogoColor);
+          updateLogoEffect();
+        });
       });
-      console.log('Logo effect updated for', logoElements.length, 'elements');
+      
+      // Text color selection event
+      textColorBoxes.forEach(colorBox => {
+        colorBox.addEventListener("click", (e) => {
+          console.log('Text color box clicked');
+          textColorBoxes.forEach(box => box.classList.remove("active"));
+          colorBox.classList.add("active");
+          currentTextColor = colorBox.getAttribute("data-color");
+          console.log('Text color changed to:', currentTextColor);
+          updateTextNeonEffect();
+        });
+      });
+      
+      // Initial render
+      renderFonts();
     }
     
-    // Update text neon effect - original code
-    function updateTextNeonEffect() {
-      console.log('Updating text neon effect with color:', currentTextColor);
-      const textElements = document.querySelectorAll('.font-name');
-      textElements.forEach(el => {
-        el.style.setProperty('color', 'white', 'important');
-        el.style
+    // Wait for DOM to be ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initialize);
+    } else {
+      initialize();
+    }
+    
+    // Also initialize after a delay to ensure fonts are loaded
+    setTimeout(initialize, 2000);
+  </script>
+</body>
+</html>
